@@ -1,0 +1,238 @@
+html, body{
+	font-size:1.4em;
+	scroll-behavior: smooth;
+	overflow:hidden;
+	font-family:Helvetica,sans-serif !important;
+	color:#353535;
+}
+
+.main-container{
+	width:100%;
+	height:100vh;
+	background:#fff;
+}
+
+.home-container > img{
+	height:30vh;
+}
+
+.home-container{
+	width:100%;
+	text-align:center;
+	position:fixed;
+	top:-30vh;
+	z-index:100;
+}
+
+.drop-from-top{
+  animation-name:dropfromtop;
+  animation-delay:2.2s;
+  animation-duration:.4s;
+  animation-fill-mode: forwards;
+}
+
+.logo-home{
+  position: fixed; 
+  bottom: -1200%; 
+  left: -1200%;
+  top: -1200%; 
+  right: -1200%;
+  height: 4000%;
+  margin: auto;
+}
+
+.initial-logo {
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  height: 100%;
+  transition: all ease .8s;
+  animation-name:fadeout;
+  animation-delay:1.2s;
+  animation-duration:.8s;
+  animation-fill-mode: forwards;
+}
+
+.overflow-hidden{
+	overflow:hidden;
+}
+
+.home-text{
+	width:50%;
+	position:absolute;
+	bottom: 15vh;
+	text-align:center;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	opacity:0;
+	animation-name:fadein;
+	animation-delay:3s;
+	animation-duration:.8s;
+	animation-fill-mode: forwards;
+}
+
+.get-started-btn{
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	position:absolute;
+	bottom:5vh;
+	opacity:0;
+	animation-name:fadein;
+	animation-delay:3.2s;
+	animation-duration:.8s;
+	animation-fill-mode: forwards;
+	
+}
+
+.get-started-btn .btn-danger{
+	background:#DA291C !important;
+	border:none;
+	border-radius:0;
+	padding:15px 30px;
+}
+
+.get-started-btn .btn-warning{
+	background:#FFC72C !important;
+	display:block;
+	border:none;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:0;
+	padding:10px 100px;
+	color:#fff;
+	border-radius:40px 3px;
+	
+}
+
+.panels{
+	position:relative !important;
+	height:100vh;
+}
+
+.droptobot{
+	animation-name:hidetobot;
+	animation-delay:.00001s;
+	animation-duration:.6s;
+	animation-fill-mode: forwards;
+}
+
+.fade-out{
+	animation-name:fadeout;
+	animation-delay:.00001s;
+	animation-duration:.5s;
+	animation-fill-mode: forwards;
+}
+
+.questions-container{
+	background: #fff;
+	height: auto;
+	width:85%;
+	margin: auto;
+	padding:20px;
+	position: relative;
+	overflow: hidden;
+	margin-top:15vh;
+	
+}
+
+.image-container{
+	background: #fff;
+	box-shadow: 0px 15px 10px -15px rgba(0,0,0,0.25);
+	height: 50vh;
+	width:80%;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	margin-top:25vh;
+}
+
+.question-item{
+	
+	padding:15px 20px;
+	cursor:pointer;
+	display:block;
+	width:100%;
+}
+
+.question-item:hover{
+	box-shadow: 5px 5px 10px -4px rgba(0,0,0,.5);
+	transition: .5s;
+}
+
+@keyframes fadeout{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@keyframes fadein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes dropfromtop{
+	from {top:-35vh;}
+	to {top:25vh;}
+}
+
+@keyframes hidetotop{
+	from {}
+	to {top:-100vh;}
+}	
+
+@keyframes hidetobot{
+	from {}
+	to {top:100vh;}
+}
+
+.asset-top{
+	top:-900px;
+}
+
+.asset-down{
+	top:300px;
+	transition: 1.5s;
+	margin-bottom: -15px;
+}
+
+.asset-down02{
+	top:288px;
+	transition: 1.5s;
+	margin-bottom: -15px;
+}
+.asset-down03{
+	top:200px;
+	transition: 1.5s;
+	margin-bottom: -15px;
+	z-index: 1;
+}
+
+.asset-down04{
+	top:100px;
+	transition: 1.5s;
+	margin-bottom: -15px;
+	z-index: 1;
+}
+
+
+.invisble{
+	visibility: hidden;
+}
+
+.btn-fries{	
+	width: 100%;
+	border-radius: 40px 3px;
+	color:#fff;
+}
+
+.hidden{
+ display: none;
+}
